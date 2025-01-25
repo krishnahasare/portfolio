@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #f4a261;
+}
+
+/* Hero Section */
+#hero {
+    background: #f4a261;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#hero .btn {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#hero .btn:hover {
+    background: #555;
+}
+
+/* About Section */
+#about {
+    padding: 2rem 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Projects Section */
+#projects {
+    padding: 2rem 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project {
+    background: skyblue;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 8px  skyblue;
+}
+
+/* Skills Section */
+#skills {
+    padding: 2rem 0;
+    background: #f4f4f4;
+}
+
+#s1:hover{
+    transform: scale(1.15);
+}
+
+#s2:hover{
+    transform: scale(1.15);
+}
+
+#s3:hover{
+    transform: scale(1.15);
+}
+#s4:hover{
+    transform: scale(1.15);
+}
+#s5:hover{
+    transform: scale(1.15);
+}
+#s6:hover{
+    transform: scale(1.15);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills-list li {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color:  #f4a261;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background: #e76f51;
+       
+}
+ 
+
+
+
