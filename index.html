@@ -1,81 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1 class="logo">Krishna's Portfolio</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="navbar" class="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <div class="logo">Portfolio</div>
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+            </ul>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+            </div>
+          </nav>
+          <button class="mobile-menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon hidden"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+          </button>
         </div>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        </ul>
+        <div class="mobile-social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:example@example.com" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          </a>
+        </div>
+      </div>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Discover my projects and skills.</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
-    </section>
-
-    <section id="about">
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
         <div class="container">
-            <h2>About Me</h2>
-            <p>👨‍💻 2nd Year CSE Student | Aspiring Software Developer 👨‍💻<br>
-                Passionate about coding and continuously learning new technologies. 
-                I have a strong foundation in programming and enjoy tackling challenging projects in the languages I've mastered. 
-                Always eager to collaborate, innovate, and bring ideas to life through code. 
-                Open to opportunities that help me grow and contribute to impactful projects. 🚀
-                
-                </p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li id="s1">C</li>
-                <li id="s2">Java</li>
-                <li id="s3">DSA</li>
-                <li id="s4">Kotlin</li>
-                <li id="s5">HTML & CSS</li> 
-                <li id="s6">Bootstrap</li>                           
-            </ul>
-        </div>
-    </section>
-
-     <section id="projects">
-        <div class="container">
-            <h2>Project</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <a href="https://krishnahasare.github.io/spotify_clone/" target="_blank">
-                        <h3>Spotify Clone</h3>
-                        <p>Streaming Music, Stylishly: A Spotify Clone Built with Pure HTML & CSS!</p>
-                    </a>
-                </div>
-
-                <div class="project">
-                    <a href="https://krishnahasare.github.io/clg-moodle-index/" target="_blank">
-                        <h3>Moodle HomePage</h3>
-                        <p>DYPSEM Moodle</p>
-                    </a>
-                </div>
+          <div class="hero-content">
+            <div class="hero-text">
+              <h2 class="subtitle fade-in">Hello, I'm</h2>
+              <h1 class="title slide-up">Krishna Hasare</h1>
+              <div class="title-underline slide-right"></div>
+              <p class="description fade-in-delay">
+                Aspiring Software Developer<br>
+                Passionate about coding and continuously learning new technologies.<br>
+                I have a strong foundation in programming and enjoy tackling challenging projects in the languages I've mastered.</p>
+              <div class="cta-buttons">
+                <a href="#projects" class="primary-btn slide-up-delay">View My Work</a>
+              </div>
             </div>
+            <div class="hero-image">
+              <div class="profile-container">
+                <img src="./assets/MY PFP.jpg" alt="John Doe" class="profile-image fade-in-delay-2">
+                <div class="profile-blob"></div>
+              </div>
+            </div>
+          </div>
+          <a href="#about" class="scroll-down-btn bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+          </a>
         </div>
-    </section>
+      </section>
 
-    
-</body>
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-underline"></div>
+          <div class="about-content">
+            <div class="about-image reveal-left">
+              <img src="./assets/codolio-final.jpg" alt="About John Doe">
+            </div>
+            <div class="about-text reveal-right">
+              <p>
+                2nd Year CSE Student | Aspiring Software Developer 
+                Passionate about coding and continuously learning new technologies.</p>
+              <p>
+                I have a strong foundation in programming and enjoy tackling challenging projects in the languages I've mastered. Always eager to collaborate, innovate, and bring ideas to life through code.</p>
+              <p>
+                Open to opportunities that help me grow and contribute to impactful projects.</p>
+              </p>
+              <div class="about-details">
+                <div class="detail-item">
+                  <span class="detail-label">Name:</span>
+                  <span class="detail-value">Krishna Hasare</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Email:</span>
+                  <span class="detail-value">krishnahasare@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <div class="section-underline"></div>
+          <p class="section-description">
+            Here are some of the technologies and tools I work with on a daily basis.
+          </p>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3 class="category-title">Frontend</h3>
+              <div class="skills-grid">
+                <div class="skill-item reveal-item">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                  </div>
+                  <h4 class="skill-name">HTML5</h4>
+                </div>
+                <div class="skill-item reveal-item">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                  </div>
+                  <h4 class="skill-name">CSS3</h4>
+                </div>
+                <div class="skill-item reveal-item">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                  </div>
+                  <h4 class="skill-name">JavaScript</h4>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">Tools & Languages</h3>
+              <div class="skills-grid">
+                <div class="skill-item reveal-item">
+                  <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                  </div>
+                  <h4 class="skill-name">Git</h4>
+                </div>                  
+                  <div class="skill-item reveal-item">
+                    <div class="skill-icon">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </div>
+                    <h4 class="skill-name">GitHub</h4>
+                  </div>                  
+                <!-- Java -->
+                <div class="skill-item reveal-item">
+                    <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <h4 class="skill-name">Java</h4>
+                </div>              
+                <!-- C -->
+                <div class="skill-item reveal-item">
+                    <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                    </div>
+                    <h4 class="skill-name">C</h4>
+                </div>                
+                <!-- Kotlin -->
+                <div class="skill-item reveal-item">
+                    <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+                    </div>
+                    <h4 class="skill-name">Kotlin</h4>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="section-underline"></div>
+          <p class="section-description">
+            Here are some of my recent projects. Each project is built with care and attention to detail.
+          </p>
+          <div class="projects-grid">
+            <div class="project-card reveal-item">
+              <div class="project-image">
+                <img src="./assets/moodle-homepage.png" alt="DYPSEM Moodle">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://dyptam.dypatilunikop.org/" class="project-link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    </a>
+                    <a href="https://github.com/krishnahasare?tab=repositories" class="project-link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">DYPSEM Moodle HomePage</h3>
+                <p class="project-description">
+                    A static homepage for our college's Moodle website.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card reveal-item">
+              <div class="project-image">
+                <img src="./assets/spotify-clone.png" alt="Spotify Clone">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://krishnahasare.github.io/spotify_clone/" class="project-link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    </a>
+                    <a href="https://github.com/krishnahasare?tab=repositories" class="project-link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Spotify Clone</h3>
+                <p class="project-description">
+                    Streaming Music, Stylishly: A Spotify Clone Built with Pure HTML & CSS!</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <a href="#home" class="back-to-top" id="backToTop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
 </html>
